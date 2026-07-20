@@ -196,31 +196,34 @@ section:not(#hero){
             NAVBAR
 =========================== */
 
-.navbar{
-
-    padding:40px 0 10px;
+.site-header{
 
     display:flex;
-
     justify-content:center;
+    align-items:center;
+
+    padding:50px 0 20px;
 
 }
 
 .brand{
 
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
+
+    text-align:center;
 
 }
 
 .brand img{
 
-    width:82px;
+    width:220px;
+    height:220px;
 
-    margin-bottom:18px;
+    object-fit:contain;
+
+    margin-bottom:28px;
 
 }
 
@@ -228,9 +231,13 @@ section:not(#hero){
 
     font-family:'Aldrich',sans-serif;
 
-    font-size:clamp(2rem,4vw,3rem);
+    font-size:4rem;
 
-    letter-spacing:.08em;
+    letter-spacing:.05em;
+
+    color:var(--text);
+
+    line-height:1;
 
     margin:0;
 
@@ -238,7 +245,7 @@ section:not(#hero){
 
 .brand-line{
 
-    width:90px;
+    width:140px;
 
     height:4px;
 
@@ -246,17 +253,15 @@ section:not(#hero){
 
     border-radius:999px;
 
-    margin-top:18px;
+    margin-top:22px;
 
 }
 
 /* ===========================
-        HERO
+            HERO
 =========================== */
 
 #hero{
-
-    min-height:calc(100vh - 180px);
 
     display:flex;
 
@@ -268,7 +273,7 @@ section:not(#hero){
 
 #hero h1{
 
-    font-size:clamp(2.8rem,5vw,4.8rem);
+    font-size:clamp(2.5rem,4vw,4rem);
 
     line-height:1.08;
 
@@ -318,35 +323,9 @@ section:not(#hero){
 
 @media (max-width:991px){
 
-    .navbar{
-
-        padding:35px 0 10px;
-
-    }
-
-    .brand img{
-
-        width:74px;
-
-    }
-
-    .brand-name{
-
-        font-size:2.2rem;
-
-    }
-
-    .brand-line{
-
-        width:80px;
-
-    }
-
     #hero{
 
         text-align:center;
-
-        min-height:auto;
 
         padding:20px 0 50px;
 
