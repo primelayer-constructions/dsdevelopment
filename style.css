@@ -454,18 +454,16 @@ section:not(#hero){
 =========================== */
 
 .work-collage{
-
     position:relative;
-
     height:360px;
-
+    overflow:hidden;
 }
 
 .work-back{
 
     position:absolute;
 
-    width:78%;
+    width:74%;
 
     height:250px;
 
@@ -487,7 +485,7 @@ section:not(#hero){
 
     position:absolute;
 
-    width:48%;
+    width:44%;
 
     height:220px;
 
