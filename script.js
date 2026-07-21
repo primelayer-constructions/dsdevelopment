@@ -17,6 +17,7 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
 
             entry.target.classList.add("active");
+            observer.unobserve(entry.target);
 
         }
 
@@ -87,7 +88,7 @@ form.addEventListener("submit", function (e) {
     .finally(() => {
 
         button.disabled = false;
-        button.textContent = "Send Request";
+        button.textContent = "Send Request →";
 
     });
 
